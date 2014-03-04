@@ -21,6 +21,7 @@
 		1C61B51218BE6FF8003F3A39 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C61B4F418BE6FF8003F3A39 /* UIKit.framework */; };
 		1C61B51A18BE6FF8003F3A39 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1C61B51818BE6FF8003F3A39 /* InfoPlist.strings */; };
 		1C61B51C18BE6FF8003F3A39 /* RubrikTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C61B51B18BE6FF8003F3A39 /* RubrikTests.m */; };
+		1CE5388F18C64A2300B8488B /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CE5388E18C64A2300B8488B /* HomeViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		1C61B51718BE6FF8003F3A39 /* RubrikTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RubrikTests-Info.plist"; sourceTree = "<group>"; };
 		1C61B51918BE6FF8003F3A39 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1C61B51B18BE6FF8003F3A39 /* RubrikTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RubrikTests.m; sourceTree = "<group>"; };
+		1CE5388D18C64A2300B8488B /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		1CE5388E18C64A2300B8488B /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +122,8 @@
 				1C61B50618BE6FF8003F3A39 /* ViewController.m */,
 				1C61B50818BE6FF8003F3A39 /* Images.xcassets */,
 				1C61B4F718BE6FF8003F3A39 /* Supporting Files */,
+				1CE5388D18C64A2300B8488B /* HomeViewController.h */,
+				1CE5388E18C64A2300B8488B /* HomeViewController.m */,
 			);
 			path = Rubrik;
 			sourceTree = "<group>";
@@ -252,6 +257,7 @@
 				1C61B50718BE6FF8003F3A39 /* ViewController.m in Sources */,
 				1C61B50118BE6FF8003F3A39 /* AppDelegate.m in Sources */,
 				1C61B4FD18BE6FF8003F3A39 /* main.m in Sources */,
+				1CE5388F18C64A2300B8488B /* HomeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

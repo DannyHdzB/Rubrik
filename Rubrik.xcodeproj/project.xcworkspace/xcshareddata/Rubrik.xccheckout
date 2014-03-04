@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>446679C9-AC9A-49C1-B1C0-3337D9414DE1</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Rubrik</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>C2BD9EBC-CF72-4E52-9CE1-9A1EB9A7192C</key>
+		<string>https://github.com/DannyHdzB/Rubrik.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Rubrik.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>C2BD9EBC-CF72-4E52-9CE1-9A1EB9A7192C</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/DannyHdzB/Rubrik.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>C2BD9EBC-CF72-4E52-9CE1-9A1EB9A7192C</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>C2BD9EBC-CF72-4E52-9CE1-9A1EB9A7192C</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Rubrik</string>
+		</dict>
+	</array>
+</dict>
+</plist>
