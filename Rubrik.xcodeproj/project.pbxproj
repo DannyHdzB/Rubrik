@@ -383,6 +383,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Rubrik/Rubrik-Prefix.pch";
 				INFOPLIST_FILE = "Rubrik/Rubrik-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -396,6 +397,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Rubrik/Rubrik-Prefix.pch";
 				INFOPLIST_FILE = "Rubrik/Rubrik-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -462,6 +464,7 @@
 				1C61B52118BE6FF9003F3A39 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1C61B52218BE6FF9003F3A39 /* Build configuration list for PBXNativeTarget "RubrikTests" */ = {
 			isa = XCConfigurationList;
@@ -470,6 +473,7 @@
 				1C61B52418BE6FF9003F3A39 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
