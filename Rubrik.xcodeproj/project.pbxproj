@@ -25,6 +25,10 @@
 		AF3075DD18C76EA800C9EEAA /* mount.png in Resources */ = {isa = PBXBuildFile; fileRef = AF3075DC18C76EA800C9EEAA /* mount.png */; };
 		AF3075DF18C76FDB00C9EEAA /* rkLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = AF3075DE18C76FDB00C9EEAA /* rkLogo.png */; };
 		AF65984318C780BD00A6033B /* RubricasVC.m in Sources */ = {isa = PBXBuildFile; fileRef = AF65984218C780BD00A6033B /* RubricasVC.m */; };
+		D4A9830718C7ABB400D445C1 /* AgregarClaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4A9830118C7ABB400D445C1 /* AgregarClaseViewController.m */; };
+		D4A9830818C7ABB400D445C1 /* AgregarClaseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D4A9830218C7ABB400D445C1 /* AgregarClaseViewController.xib */; };
+		D4A9830918C7ABB400D445C1 /* ClasesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4A9830418C7ABB400D445C1 /* ClasesViewController.m */; };
+		D4A9830A18C7ABB400D445C1 /* EvaluarVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D4A9830618C7ABB400D445C1 /* EvaluarVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +67,13 @@
 		AF3075DE18C76FDB00C9EEAA /* rkLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rkLogo.png; sourceTree = "<group>"; };
 		AF65984118C780BD00A6033B /* RubricasVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RubricasVC.h; sourceTree = "<group>"; };
 		AF65984218C780BD00A6033B /* RubricasVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RubricasVC.m; sourceTree = "<group>"; };
+		D4A9830018C7ABB400D445C1 /* AgregarClaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AgregarClaseViewController.h; sourceTree = "<group>"; };
+		D4A9830118C7ABB400D445C1 /* AgregarClaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AgregarClaseViewController.m; sourceTree = "<group>"; };
+		D4A9830218C7ABB400D445C1 /* AgregarClaseViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AgregarClaseViewController.xib; sourceTree = "<group>"; };
+		D4A9830318C7ABB400D445C1 /* ClasesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClasesViewController.h; sourceTree = "<group>"; };
+		D4A9830418C7ABB400D445C1 /* ClasesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClasesViewController.m; sourceTree = "<group>"; };
+		D4A9830518C7ABB400D445C1 /* EvaluarVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EvaluarVC.h; sourceTree = "<group>"; };
+		D4A9830618C7ABB400D445C1 /* EvaluarVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EvaluarVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +133,13 @@
 		1C61B4F618BE6FF8003F3A39 /* Rubrik */ = {
 			isa = PBXGroup;
 			children = (
+				D4A9830018C7ABB400D445C1 /* AgregarClaseViewController.h */,
+				D4A9830118C7ABB400D445C1 /* AgregarClaseViewController.m */,
+				D4A9830218C7ABB400D445C1 /* AgregarClaseViewController.xib */,
+				D4A9830318C7ABB400D445C1 /* ClasesViewController.h */,
+				D4A9830418C7ABB400D445C1 /* ClasesViewController.m */,
+				D4A9830518C7ABB400D445C1 /* EvaluarVC.h */,
+				D4A9830618C7ABB400D445C1 /* EvaluarVC.m */,
 				AF3075DB18C76E9300C9EEAA /* Images */,
 				1C61B4FF18BE6FF8003F3A39 /* AppDelegate.h */,
 				1C61B50018BE6FF8003F3A39 /* AppDelegate.m */,
@@ -134,13 +152,6 @@
 				1C61B4F718BE6FF8003F3A39 /* Supporting Files */,
 				1CE5388D18C64A2300B8488B /* HomeViewController.h */,
 				1CE5388E18C64A2300B8488B /* HomeViewController.m */,
-				D46B8E3418C784CD002E6325 /* ClasesViewController.h */,
-				D19507AC18C79C9F00E6D440 /* EvaluarVC.h */,
-				D19507AD18C79C9F00E6D440 /* EvaluarVC.m */,
-				D46B8E3518C784CD002E6325 /* ClasesViewController.m */,
-				D40E986A18C78F3E00F6EBB2 /* AgregarClaseViewController.h */,
-				D40E986B18C78F3E00F6EBB2 /* AgregarClaseViewController.m */,
-				D40E986C18C78F3E00F6EBB2 /* AgregarClaseViewController.xib */,
 			);
 			path = Rubrik;
 			sourceTree = "<group>";
@@ -262,7 +273,7 @@
 				1C61B50918BE6FF8003F3A39 /* Images.xcassets in Resources */,
 				1C61B4FB18BE6FF8003F3A39 /* InfoPlist.strings in Resources */,
 				1C61B50418BE6FF8003F3A39 /* Main.storyboard in Resources */,
-				D40E986E18C78F3E00F6EBB2 /* AgregarClaseViewController.xib in Resources */,
+				D4A9830818C7ABB400D445C1 /* AgregarClaseViewController.xib in Resources */,
 				AF3075DF18C76FDB00C9EEAA /* rkLogo.png in Resources */,
 				AF3075DD18C76EA800C9EEAA /* mount.png in Resources */,
 			);
@@ -283,14 +294,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D46B8E3618C784CD002E6325 /* ClasesViewController.m in Sources */,
-				D40E986D18C78F3E00F6EBB2 /* AgregarClaseViewController.m in Sources */,
-				D19507AE18C79C9F00E6D440 /* EvaluarVC.m in Sources */,
 				1C61B50718BE6FF8003F3A39 /* ViewController.m in Sources */,
+				D4A9830718C7ABB400D445C1 /* AgregarClaseViewController.m in Sources */,
+				D4A9830918C7ABB400D445C1 /* ClasesViewController.m in Sources */,
 				1C61B50118BE6FF8003F3A39 /* AppDelegate.m in Sources */,
 				1C61B4FD18BE6FF8003F3A39 /* main.m in Sources */,
 				AF65984318C780BD00A6033B /* RubricasVC.m in Sources */,
 				1CE5388F18C64A2300B8488B /* HomeViewController.m in Sources */,
+				D4A9830A18C7ABB400D445C1 /* EvaluarVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
