@@ -54,17 +54,36 @@
                     <navigationItem key="navigationItem" title="Rubrik" id="Or6-UF-x6I"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <connections>
-                        <segue destination="PuF-90-Gcr" kind="push" identifier="seleccionarOpc" id="Uw5-b1-wu7"/>
+                        <segue destination="PuF-90-Gcr" kind="push" identifier="seleccionarEvaluar" id="Uw5-b1-wu7"/>
+                        <segue destination="bPY-Ag-6mU" kind="push" identifier="seleccionarRubricas" id="uPM-Kn-tbM"/>
+                        <segue destination="htX-eJ-1ca" kind="push" identifier="seleccionarClases" id="95N-ls-gAq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TQr-D9-trq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="636" y="-1288"/>
+            <point key="canvasLocation" x="536" y="-1016"/>
         </scene>
-        <!--View Controller-->
+        <!--View Controller - Rubricas-->
+        <scene sceneID="Uk1-0l-TFR">
+            <objects>
+                <viewController title="Rubricas" id="bPY-Ag-6mU" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ocn-Nu-olE">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Y71-07-2YB"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nUX-er-GIf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1997" y="1"/>
+        </scene>
+        <!--View Controller - Evaluar-->
         <scene sceneID="HNf-xU-BSX">
             <objects>
-                <viewController id="PuF-90-Gcr" sceneMemberID="viewController">
+                <viewController title="Evaluar" id="PuF-90-Gcr" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ieA-qS-FRA">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -76,7 +95,24 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Khk-8z-w4Z" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1969" y="-1288"/>
+            <point key="canvasLocation" x="2219" y="-1922"/>
+        </scene>
+        <!--View Controller - Clases-->
+        <scene sceneID="XE6-hX-Azy">
+            <objects>
+                <viewController title="Clases" id="htX-eJ-1ca" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Z56-pK-cOZ">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="msm-aC-V76"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mWW-Ae-dMr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2177" y="-1083"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="evR-kY-Thm">

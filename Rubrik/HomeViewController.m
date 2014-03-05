@@ -41,7 +41,23 @@
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
 
     self.indiceActual = indexPath.row;
-    [self performSegueWithIdentifier:@"seleccionarOpc" sender:self];
+    
+    switch (self.indiceActual) {
+        case 0:
+            [self performSegueWithIdentifier:@"seleccionarEvaluar" sender:self];
+            break;
+            
+        case 1:
+            [self performSegueWithIdentifier:@"seleccionarClases" sender:self];
+            break;
+            
+        case 2:
+            [self performSegueWithIdentifier:@"seleccionarRubricas" sender:self];
+            break;
+            
+        default:
+            break;
+    }
 }
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -57,7 +73,7 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
-    self.opciones=@[@"Evaluar",@"Clases",@"Alumnos",@"Rúbricas"];
+    self.opciones=@[@"Evaluar",@"Clases",@"Rúbricas"];
 
 }
 
