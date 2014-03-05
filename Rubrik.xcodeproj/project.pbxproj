@@ -24,10 +24,7 @@
 		1CE5388F18C64A2300B8488B /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CE5388E18C64A2300B8488B /* HomeViewController.m */; };
 		AF3075DD18C76EA800C9EEAA /* mount.png in Resources */ = {isa = PBXBuildFile; fileRef = AF3075DC18C76EA800C9EEAA /* mount.png */; };
 		AF3075DF18C76FDB00C9EEAA /* rkLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = AF3075DE18C76FDB00C9EEAA /* rkLogo.png */; };
-		D19507AE18C79C9F00E6D440 /* EvaluarVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D19507AD18C79C9F00E6D440 /* EvaluarVC.m */; };
-		D40E986D18C78F3E00F6EBB2 /* AgregarClaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D40E986B18C78F3E00F6EBB2 /* AgregarClaseViewController.m */; };
-		D40E986E18C78F3E00F6EBB2 /* AgregarClaseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D40E986C18C78F3E00F6EBB2 /* AgregarClaseViewController.xib */; };
-		D46B8E3618C784CD002E6325 /* ClasesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D46B8E3518C784CD002E6325 /* ClasesViewController.m */; };
+		AF65984318C780BD00A6033B /* RubricasVC.m in Sources */ = {isa = PBXBuildFile; fileRef = AF65984218C780BD00A6033B /* RubricasVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,13 +61,8 @@
 		1CE5388E18C64A2300B8488B /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		AF3075DC18C76EA800C9EEAA /* mount.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mount.png; sourceTree = "<group>"; };
 		AF3075DE18C76FDB00C9EEAA /* rkLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rkLogo.png; sourceTree = "<group>"; };
-		D19507AC18C79C9F00E6D440 /* EvaluarVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EvaluarVC.h; sourceTree = "<group>"; };
-		D19507AD18C79C9F00E6D440 /* EvaluarVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EvaluarVC.m; sourceTree = "<group>"; };
-		D40E986A18C78F3E00F6EBB2 /* AgregarClaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AgregarClaseViewController.h; sourceTree = "<group>"; };
-		D40E986B18C78F3E00F6EBB2 /* AgregarClaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AgregarClaseViewController.m; sourceTree = "<group>"; };
-		D40E986C18C78F3E00F6EBB2 /* AgregarClaseViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AgregarClaseViewController.xib; sourceTree = "<group>"; };
-		D46B8E3418C784CD002E6325 /* ClasesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClasesViewController.h; sourceTree = "<group>"; };
-		D46B8E3518C784CD002E6325 /* ClasesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClasesViewController.m; sourceTree = "<group>"; };
+		AF65984118C780BD00A6033B /* RubricasVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RubricasVC.h; sourceTree = "<group>"; };
+		AF65984218C780BD00A6033B /* RubricasVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RubricasVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +127,8 @@
 				1C61B50018BE6FF8003F3A39 /* AppDelegate.m */,
 				1C61B50218BE6FF8003F3A39 /* Main.storyboard */,
 				1C61B50518BE6FF8003F3A39 /* ViewController.h */,
+				AF65984118C780BD00A6033B /* RubricasVC.h */,
+				AF65984218C780BD00A6033B /* RubricasVC.m */,
 				1C61B50618BE6FF8003F3A39 /* ViewController.m */,
 				1C61B50818BE6FF8003F3A39 /* Images.xcassets */,
 				1C61B4F718BE6FF8003F3A39 /* Supporting Files */,
@@ -295,6 +289,7 @@
 				1C61B50718BE6FF8003F3A39 /* ViewController.m in Sources */,
 				1C61B50118BE6FF8003F3A39 /* AppDelegate.m in Sources */,
 				1C61B4FD18BE6FF8003F3A39 /* main.m in Sources */,
+				AF65984318C780BD00A6033B /* RubricasVC.m in Sources */,
 				1CE5388F18C64A2300B8488B /* HomeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
