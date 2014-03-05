@@ -24,6 +24,9 @@
 		1CE5388F18C64A2300B8488B /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CE5388E18C64A2300B8488B /* HomeViewController.m */; };
 		AF3075DD18C76EA800C9EEAA /* mount.png in Resources */ = {isa = PBXBuildFile; fileRef = AF3075DC18C76EA800C9EEAA /* mount.png */; };
 		AF3075DF18C76FDB00C9EEAA /* rkLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = AF3075DE18C76FDB00C9EEAA /* rkLogo.png */; };
+		D40E986D18C78F3E00F6EBB2 /* AgregarClaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D40E986B18C78F3E00F6EBB2 /* AgregarClaseViewController.m */; };
+		D40E986E18C78F3E00F6EBB2 /* AgregarClaseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D40E986C18C78F3E00F6EBB2 /* AgregarClaseViewController.xib */; };
+		D46B8E3618C784CD002E6325 /* ClasesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D46B8E3518C784CD002E6325 /* ClasesViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +63,11 @@
 		1CE5388E18C64A2300B8488B /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		AF3075DC18C76EA800C9EEAA /* mount.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mount.png; sourceTree = "<group>"; };
 		AF3075DE18C76FDB00C9EEAA /* rkLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rkLogo.png; sourceTree = "<group>"; };
+		D40E986A18C78F3E00F6EBB2 /* AgregarClaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AgregarClaseViewController.h; sourceTree = "<group>"; };
+		D40E986B18C78F3E00F6EBB2 /* AgregarClaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AgregarClaseViewController.m; sourceTree = "<group>"; };
+		D40E986C18C78F3E00F6EBB2 /* AgregarClaseViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AgregarClaseViewController.xib; sourceTree = "<group>"; };
+		D46B8E3418C784CD002E6325 /* ClasesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClasesViewController.h; sourceTree = "<group>"; };
+		D46B8E3518C784CD002E6325 /* ClasesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClasesViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +137,11 @@
 				1C61B4F718BE6FF8003F3A39 /* Supporting Files */,
 				1CE5388D18C64A2300B8488B /* HomeViewController.h */,
 				1CE5388E18C64A2300B8488B /* HomeViewController.m */,
+				D46B8E3418C784CD002E6325 /* ClasesViewController.h */,
+				D46B8E3518C784CD002E6325 /* ClasesViewController.m */,
+				D40E986A18C78F3E00F6EBB2 /* AgregarClaseViewController.h */,
+				D40E986B18C78F3E00F6EBB2 /* AgregarClaseViewController.m */,
+				D40E986C18C78F3E00F6EBB2 /* AgregarClaseViewController.xib */,
 			);
 			path = Rubrik;
 			sourceTree = "<group>";
@@ -250,6 +263,7 @@
 				1C61B50918BE6FF8003F3A39 /* Images.xcassets in Resources */,
 				1C61B4FB18BE6FF8003F3A39 /* InfoPlist.strings in Resources */,
 				1C61B50418BE6FF8003F3A39 /* Main.storyboard in Resources */,
+				D40E986E18C78F3E00F6EBB2 /* AgregarClaseViewController.xib in Resources */,
 				AF3075DF18C76FDB00C9EEAA /* rkLogo.png in Resources */,
 				AF3075DD18C76EA800C9EEAA /* mount.png in Resources */,
 			);
@@ -270,6 +284,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D46B8E3618C784CD002E6325 /* ClasesViewController.m in Sources */,
+				D40E986D18C78F3E00F6EBB2 /* AgregarClaseViewController.m in Sources */,
 				1C61B50718BE6FF8003F3A39 /* ViewController.m in Sources */,
 				1C61B50118BE6FF8003F3A39 /* AppDelegate.m in Sources */,
 				1C61B4FD18BE6FF8003F3A39 /* main.m in Sources */,

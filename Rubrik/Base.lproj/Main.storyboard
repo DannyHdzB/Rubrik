@@ -24,7 +24,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="C2F-ct-yst">
-                                <rect key="frame" x="364" y="178" width="640" height="245"/>
+                                <rect key="frame" x="364" y="203" width="640" height="245"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
@@ -97,10 +97,10 @@
             </objects>
             <point key="canvasLocation" x="2219" y="-1922"/>
         </scene>
-        <!--View Controller - Clases-->
+        <!--Clases View Controller - Clases-->
         <scene sceneID="XE6-hX-Azy">
             <objects>
-                <viewController title="Clases" id="htX-eJ-1ca" sceneMemberID="viewController">
+                <viewController title="Clases" id="htX-eJ-1ca" customClass="ClasesViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Z56-pK-cOZ">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -116,12 +116,43 @@
                                 <rect key="frame" x="20" y="85" width="307" height="598"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="f0s-Ru-OQG">
+                                <rect key="frame" x="364" y="241" width="640" height="245"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" restorationIdentifier="claseCelda" selectionStyle="default" indentationWidth="10" id="K11-MX-s9T">
+                                        <rect key="frame" x="0.0" y="22" width="640" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="K11-MX-s9T" id="7KX-zn-9ML">
+                                            <rect key="frame" x="0.0" y="0.0" width="640" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="htX-eJ-1ca" id="8ew-8c-fAR"/>
+                                </connections>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="btnShowAgregarClase" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="6kz-hT-UDl">
+                                <rect key="frame" x="845" y="168" width="159" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Agregar nueva clase">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="showPopover:" destination="htX-eJ-1ca" eventType="touchUpInside" id="1eB-mX-58O"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
                     <navigationItem key="navigationItem" title="Clases" id="msm-aC-V76"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <outlet property="showAgregarClase" destination="6kz-hT-UDl" id="9mK-59-DpP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mWW-Ae-dMr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
