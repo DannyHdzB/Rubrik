@@ -63,14 +63,11 @@
 
 
 -(void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex{
-    
     NSString *str = [alertView textFieldAtIndex:0].text;
-
     if(buttonIndex==1){
         [_rubricas addObject:str];
     }
     [_tableView reloadData];
-    
 }
 
 

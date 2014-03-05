@@ -88,6 +88,7 @@
     
 }
 
+
 - (IBAction)seleccionarClase:(id)sender {
     UIAlertView *alerta =[[UIAlertView alloc] initWithTitle:@"Clase" message:@"Seleccione la clase" delegate:self cancelButtonTitle:@"Cancelar" otherButtonTitles:@"Aplicaciones de cómputo móvil",@"Multinucleo",@"Seguridad", nil];
     alerta.alertViewStyle = UIAlertViewStyleDefault;

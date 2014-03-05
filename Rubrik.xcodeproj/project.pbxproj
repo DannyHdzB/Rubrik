@@ -25,6 +25,8 @@
 		AF3075DD18C76EA800C9EEAA /* mount.png in Resources */ = {isa = PBXBuildFile; fileRef = AF3075DC18C76EA800C9EEAA /* mount.png */; };
 		AF3075DF18C76FDB00C9EEAA /* rkLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = AF3075DE18C76FDB00C9EEAA /* rkLogo.png */; };
 		AF65984318C780BD00A6033B /* RubricasVC.m in Sources */ = {isa = PBXBuildFile; fileRef = AF65984218C780BD00A6033B /* RubricasVC.m */; };
+		AF65989018C7AD3400A6033B /* alumnosVC.m in Sources */ = {isa = PBXBuildFile; fileRef = AF65988F18C7AD3400A6033B /* alumnosVC.m */; };
+		AF65989318C7AD4B00A6033B /* tareasVC.m in Sources */ = {isa = PBXBuildFile; fileRef = AF65989218C7AD4B00A6033B /* tareasVC.m */; };
 		D4A9830718C7ABB400D445C1 /* AgregarClaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4A9830118C7ABB400D445C1 /* AgregarClaseViewController.m */; };
 		D4A9830818C7ABB400D445C1 /* AgregarClaseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D4A9830218C7ABB400D445C1 /* AgregarClaseViewController.xib */; };
 		D4A9830918C7ABB400D445C1 /* ClasesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4A9830418C7ABB400D445C1 /* ClasesViewController.m */; };
@@ -67,6 +69,10 @@
 		AF3075DE18C76FDB00C9EEAA /* rkLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rkLogo.png; sourceTree = "<group>"; };
 		AF65984118C780BD00A6033B /* RubricasVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RubricasVC.h; sourceTree = "<group>"; };
 		AF65984218C780BD00A6033B /* RubricasVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RubricasVC.m; sourceTree = "<group>"; };
+		AF65988E18C7AD3400A6033B /* alumnosVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = alumnosVC.h; sourceTree = "<group>"; };
+		AF65988F18C7AD3400A6033B /* alumnosVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = alumnosVC.m; sourceTree = "<group>"; };
+		AF65989118C7AD4B00A6033B /* tareasVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tareasVC.h; sourceTree = "<group>"; };
+		AF65989218C7AD4B00A6033B /* tareasVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = tareasVC.m; sourceTree = "<group>"; };
 		D4A9830018C7ABB400D445C1 /* AgregarClaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AgregarClaseViewController.h; sourceTree = "<group>"; };
 		D4A9830118C7ABB400D445C1 /* AgregarClaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AgregarClaseViewController.m; sourceTree = "<group>"; };
 		D4A9830218C7ABB400D445C1 /* AgregarClaseViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AgregarClaseViewController.xib; sourceTree = "<group>"; };
@@ -142,8 +148,12 @@
 				D4A9830618C7ABB400D445C1 /* EvaluarVC.m */,
 				AF3075DB18C76E9300C9EEAA /* Images */,
 				1C61B4FF18BE6FF8003F3A39 /* AppDelegate.h */,
+				AF65988E18C7AD3400A6033B /* alumnosVC.h */,
+				AF65988F18C7AD3400A6033B /* alumnosVC.m */,
 				1C61B50018BE6FF8003F3A39 /* AppDelegate.m */,
 				1C61B50218BE6FF8003F3A39 /* Main.storyboard */,
+				AF65989118C7AD4B00A6033B /* tareasVC.h */,
+				AF65989218C7AD4B00A6033B /* tareasVC.m */,
 				1C61B50518BE6FF8003F3A39 /* ViewController.h */,
 				AF65984118C780BD00A6033B /* RubricasVC.h */,
 				AF65984218C780BD00A6033B /* RubricasVC.m */,
@@ -294,9 +304,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF65989018C7AD3400A6033B /* alumnosVC.m in Sources */,
 				1C61B50718BE6FF8003F3A39 /* ViewController.m in Sources */,
 				D4A9830718C7ABB400D445C1 /* AgregarClaseViewController.m in Sources */,
 				D4A9830918C7ABB400D445C1 /* ClasesViewController.m in Sources */,
+				AF65989318C7AD4B00A6033B /* tareasVC.m in Sources */,
 				1C61B50118BE6FF8003F3A39 /* AppDelegate.m in Sources */,
 				1C61B4FD18BE6FF8003F3A39 /* main.m in Sources */,
 				AF65984318C780BD00A6033B /* RubricasVC.m in Sources */,
