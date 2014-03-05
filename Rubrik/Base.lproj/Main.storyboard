@@ -80,6 +80,23 @@
             </objects>
             <point key="canvasLocation" x="1997" y="1"/>
         </scene>
+        <!--View Controller - Informacion Clase-->
+        <scene sceneID="Jyb-Mk-05m">
+            <objects>
+                <viewController title="Informacion Clase" id="TeI-Fu-ZF4" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gu8-3l-J9I">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Información de Clase" id="TXd-Gr-HU8"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aCa-g7-Oqm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3465" y="-985"/>
+        </scene>
         <!--View Controller - Evaluar-->
         <scene sceneID="HNf-xU-BSX">
             <objects>
@@ -152,6 +169,7 @@
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <connections>
                         <outlet property="showAgregarClase" destination="6kz-hT-UDl" id="9mK-59-DpP"/>
+                        <segue destination="TeI-Fu-ZF4" kind="push" id="dzu-dI-mKL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mWW-Ae-dMr" userLabel="First Responder" sceneMemberID="firstResponder"/>
