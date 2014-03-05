@@ -44,7 +44,7 @@
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-
+    [self performSegueWithIdentifier:@"verInformacionClase" sender:self];
 }
 
 #pragma mark Agregar Clase
