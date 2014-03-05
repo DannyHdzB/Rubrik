@@ -22,6 +22,8 @@
 		1C61B51A18BE6FF8003F3A39 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1C61B51818BE6FF8003F3A39 /* InfoPlist.strings */; };
 		1C61B51C18BE6FF8003F3A39 /* RubrikTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C61B51B18BE6FF8003F3A39 /* RubrikTests.m */; };
 		1CE5388F18C64A2300B8488B /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CE5388E18C64A2300B8488B /* HomeViewController.m */; };
+		AF3075DD18C76EA800C9EEAA /* mount.png in Resources */ = {isa = PBXBuildFile; fileRef = AF3075DC18C76EA800C9EEAA /* mount.png */; };
+		AF3075DF18C76FDB00C9EEAA /* rkLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = AF3075DE18C76FDB00C9EEAA /* rkLogo.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +58,8 @@
 		1C61B51B18BE6FF8003F3A39 /* RubrikTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RubrikTests.m; sourceTree = "<group>"; };
 		1CE5388D18C64A2300B8488B /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		1CE5388E18C64A2300B8488B /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		AF3075DC18C76EA800C9EEAA /* mount.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mount.png; sourceTree = "<group>"; };
+		AF3075DE18C76FDB00C9EEAA /* rkLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rkLogo.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +119,7 @@
 		1C61B4F618BE6FF8003F3A39 /* Rubrik */ = {
 			isa = PBXGroup;
 			children = (
+				AF3075DB18C76E9300C9EEAA /* Images */,
 				1C61B4FF18BE6FF8003F3A39 /* AppDelegate.h */,
 				1C61B50018BE6FF8003F3A39 /* AppDelegate.m */,
 				1C61B50218BE6FF8003F3A39 /* Main.storyboard */,
@@ -155,6 +160,15 @@
 				1C61B51818BE6FF8003F3A39 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AF3075DB18C76E9300C9EEAA /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				AF3075DE18C76FDB00C9EEAA /* rkLogo.png */,
+				AF3075DC18C76EA800C9EEAA /* mount.png */,
+			);
+			name = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -236,6 +250,8 @@
 				1C61B50918BE6FF8003F3A39 /* Images.xcassets in Resources */,
 				1C61B4FB18BE6FF8003F3A39 /* InfoPlist.strings in Resources */,
 				1C61B50418BE6FF8003F3A39 /* Main.storyboard in Resources */,
+				AF3075DF18C76FDB00C9EEAA /* rkLogo.png in Resources */,
+				AF3075DD18C76EA800C9EEAA /* mount.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -10,5 +10,6 @@
 
 @interface HomeViewController : UIViewController <UITableViewDataSource,UITableViewDelegate>
 @property (nonatomic,strong) NSArray *opciones;
+@property (nonatomic) NSInteger indiceActual;
 
 @end
