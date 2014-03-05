@@ -25,27 +25,35 @@
 
 
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
+    
     return 1;
+
 }
+
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return self.rubricas.count;
+    return [self.rubricas count];
+
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    
-    static NSString *celdaID =@"tbRubricas";
-    UITableViewCell *celda = [tableView dequeueReusableCellWithIdentifier:celdaID];
-    if(celda == nil){
+
+        static NSString *celdaID =@"tbRubricas";
+        UITableViewCell *celda = [tableView dequeueReusableCellWithIdentifier:celdaID];
+        if(celda == nil){
+            
+            //no pueede reusar la celda}
+            celda= [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:celdaID];
+            
+        }
+        celda.textLabel.text = [self.rubricas objectAtIndex:indexPath.row];
         
-        //no pueede reusar la celda}
-        celda= [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:celdaID];
-        
-    }
-    celda.textLabel.text = [self.rubricas objectAtIndex:indexPath.row];
-    
-    return celda;
-    
+        return celda;
+
+
 }
+
+
+
 - (IBAction)agregarRubrica:(id)sender {
     
     UIAlertView *alerta =[[UIAlertView alloc] initWithTitle:@"Agregar Rubrica" message:@"Escribe el nombre" delegate:self cancelButtonTitle:@"Cancelar" otherButtonTitles: @"Aceptar",nil];
@@ -68,8 +76,9 @@
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     self.indiceActual = indexPath.row;
-}
 
+    self.lblNombreRubrica.text = [self.rubricas objectAtIndex:self.indiceActual];
+}
 
 
 - (void)viewDidLoad
@@ -79,7 +88,9 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     self.rubricas= [[NSMutableArray alloc]initWithObjects:@"Ensayos",@"Reportes",@"Investigacion", nil];
-    self.navigationItem.title = @"Rubricas";
+
+    self.conceptos= [[NSMutableArray alloc]initWithObjects:@"Rubrica 1",@"Rubrica 2",@"Rubrica 3", nil];
+    
   /*  self.navigationItem.leftBarButtonItem = self.editButtonItem;
     UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:nil];
     self.navigationItem.rightBarButtonItem = addButton;*/

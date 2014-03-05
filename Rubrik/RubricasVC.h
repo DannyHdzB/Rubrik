@@ -10,10 +10,16 @@
 
 @interface RubricasVC : UIViewController<UITableViewDataSource,UITableViewDelegate>
 @property (nonatomic,strong) NSMutableArray *rubricas;
-@property (weak, nonatomic) IBOutlet UILabel *lblNombreRubrica;
+@property (nonatomic,strong) NSMutableArray *conceptos;
+
 @property (nonatomic) NSInteger indiceActual;
+
 @property (weak, nonatomic) IBOutlet UITextField *tfConceptoRubrica;
-@property (weak, nonatomic) IBOutlet UITextField *tfValorRubrica;
+
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
+
+@property (weak, nonatomic) IBOutlet UITableView *tableConceptos;
+
+@property (weak, nonatomic) IBOutlet UILabel *lblNombreRubrica;
 
 @end
