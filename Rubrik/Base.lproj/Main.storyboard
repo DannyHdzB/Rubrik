@@ -462,10 +462,10 @@
             </objects>
             <point key="canvasLocation" x="-1694" y="-985"/>
         </scene>
-        <!--View Controller-->
+        <!--AlumnosVC-->
         <scene sceneID="Sr7-dR-2Cw">
             <objects>
-                <viewController automaticallyAdjustsScrollViewInsets="NO" id="HP9-Xf-qnG" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="HP9-Xf-qnG" customClass="alumnosVC" sceneMemberID="viewController">
                     <view key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="UK4-tk-bdK">
                         <rect key="frame" x="0.0" y="0.0" width="441" height="618"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -480,6 +480,20 @@
                                 <rect key="frame" x="20" y="66" width="401" height="532"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" restorationIdentifier="tbAlumnos" selectionStyle="default" indentationWidth="10" id="pJU-qb-Vp8">
+                                        <rect key="frame" x="0.0" y="22" width="401" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="pJU-qb-Vp8" id="VeA-FA-ZuM">
+                                            <rect key="frame" x="0.0" y="0.0" width="401" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="HP9-Xf-qnG" id="STQ-1H-uFf"/>
+                                    <outlet property="delegate" destination="HP9-Xf-qnG" id="C1q-4w-1Ei"/>
+                                </connections>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="contactAdd" lineBreakMode="middleTruncation" id="xEE-OM-92l">
                                 <rect key="frame" x="387" y="24" width="22" height="22"/>
@@ -488,6 +502,9 @@
                                 <state key="normal">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="agregarAlumno:" destination="HP9-Xf-qnG" eventType="touchUpInside" id="xda-ja-rRh"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -495,15 +512,18 @@
                     </view>
                     <toolbarItems/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="tableView" destination="E55-8d-JjY" id="a6w-Bj-FHs"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="C5b-J5-jjw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3401" y="-1298"/>
         </scene>
-        <!--View Controller-->
+        <!--TareasVC-->
         <scene sceneID="5gz-3D-RNL">
             <objects>
-                <viewController automaticallyAdjustsScrollViewInsets="NO" id="M1O-ND-4Sa" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="M1O-ND-4Sa" customClass="tareasVC" sceneMemberID="viewController">
                     <view key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="eWb-GT-yVP">
                         <rect key="frame" x="0.0" y="0.0" width="512" height="618"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -518,6 +538,20 @@
                                 <rect key="frame" x="20" y="61" width="472" height="537"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" restorationIdentifier="tbTareas" selectionStyle="default" indentationWidth="10" id="17B-VA-BbU">
+                                        <rect key="frame" x="0.0" y="22" width="472" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="17B-VA-BbU" id="kf4-yb-0cT">
+                                            <rect key="frame" x="0.0" y="0.0" width="472" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="M1O-ND-4Sa" id="v6R-jV-Xc5"/>
+                                    <outlet property="delegate" destination="M1O-ND-4Sa" id="T8A-k9-6vz"/>
+                                </connections>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="contactAdd" lineBreakMode="middleTruncation" id="cyn-l9-ekY">
                                 <rect key="frame" x="465" y="19" width="22" height="22"/>
@@ -526,12 +560,18 @@
                                 <state key="normal">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="agregarTarea:" destination="M1O-ND-4Sa" eventType="touchUpInside" id="XYE-2L-XCd"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
                     <toolbarItems/>
+                    <connections>
+                        <outlet property="tableView" destination="hLv-Lv-R1G" id="5q0-7e-ER7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XqP-2k-YMx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
