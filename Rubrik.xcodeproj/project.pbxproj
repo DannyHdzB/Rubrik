@@ -134,6 +134,13 @@
 				1C61B4F718BE6FF8003F3A39 /* Supporting Files */,
 				1CE5388D18C64A2300B8488B /* HomeViewController.h */,
 				1CE5388E18C64A2300B8488B /* HomeViewController.m */,
+				D46B8E3418C784CD002E6325 /* ClasesViewController.h */,
+				D19507AC18C79C9F00E6D440 /* EvaluarVC.h */,
+				D19507AD18C79C9F00E6D440 /* EvaluarVC.m */,
+				D46B8E3518C784CD002E6325 /* ClasesViewController.m */,
+				D40E986A18C78F3E00F6EBB2 /* AgregarClaseViewController.h */,
+				D40E986B18C78F3E00F6EBB2 /* AgregarClaseViewController.m */,
+				D40E986C18C78F3E00F6EBB2 /* AgregarClaseViewController.xib */,
 			);
 			path = Rubrik;
 			sourceTree = "<group>";
@@ -255,6 +262,7 @@
 				1C61B50918BE6FF8003F3A39 /* Images.xcassets in Resources */,
 				1C61B4FB18BE6FF8003F3A39 /* InfoPlist.strings in Resources */,
 				1C61B50418BE6FF8003F3A39 /* Main.storyboard in Resources */,
+				D40E986E18C78F3E00F6EBB2 /* AgregarClaseViewController.xib in Resources */,
 				AF3075DF18C76FDB00C9EEAA /* rkLogo.png in Resources */,
 				AF3075DD18C76EA800C9EEAA /* mount.png in Resources */,
 			);
@@ -275,6 +283,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D46B8E3618C784CD002E6325 /* ClasesViewController.m in Sources */,
+				D40E986D18C78F3E00F6EBB2 /* AgregarClaseViewController.m in Sources */,
+				D19507AE18C79C9F00E6D440 /* EvaluarVC.m in Sources */,
 				1C61B50718BE6FF8003F3A39 /* ViewController.m in Sources */,
 				1C61B50118BE6FF8003F3A39 /* AppDelegate.m in Sources */,
 				1C61B4FD18BE6FF8003F3A39 /* main.m in Sources */,
