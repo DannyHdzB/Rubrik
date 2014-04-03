@@ -22,6 +22,8 @@
 		1C61B51A18BE6FF8003F3A39 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1C61B51818BE6FF8003F3A39 /* InfoPlist.strings */; };
 		1C61B51C18BE6FF8003F3A39 /* RubrikTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C61B51B18BE6FF8003F3A39 /* RubrikTests.m */; };
 		1CE5388F18C64A2300B8488B /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CE5388E18C64A2300B8488B /* HomeViewController.m */; };
+		97A4B27D18ED039F003DA3DA /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 97A4B27C18ED039F003DA3DA /* libsqlite3.dylib */; };
+		97A4B28018ED03B1003DA3DA /* PrincipalVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 97A4B27F18ED03B1003DA3DA /* PrincipalVC.m */; };
 		AF3075DD18C76EA800C9EEAA /* mount.png in Resources */ = {isa = PBXBuildFile; fileRef = AF3075DC18C76EA800C9EEAA /* mount.png */; };
 		AF3075DF18C76FDB00C9EEAA /* rkLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = AF3075DE18C76FDB00C9EEAA /* rkLogo.png */; };
 		AF65984318C780BD00A6033B /* RubricasVC.m in Sources */ = {isa = PBXBuildFile; fileRef = AF65984218C780BD00A6033B /* RubricasVC.m */; };
@@ -65,6 +67,10 @@
 		1C61B51B18BE6FF8003F3A39 /* RubrikTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RubrikTests.m; sourceTree = "<group>"; };
 		1CE5388D18C64A2300B8488B /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		1CE5388E18C64A2300B8488B /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		97A4B27A18ED0341003DA3DA /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
+		97A4B27C18ED039F003DA3DA /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		97A4B27E18ED03B1003DA3DA /* PrincipalVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrincipalVC.h; sourceTree = "<group>"; };
+		97A4B27F18ED03B1003DA3DA /* PrincipalVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrincipalVC.m; sourceTree = "<group>"; };
 		AF3075DC18C76EA800C9EEAA /* mount.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mount.png; sourceTree = "<group>"; };
 		AF3075DE18C76FDB00C9EEAA /* rkLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rkLogo.png; sourceTree = "<group>"; };
 		AF65984118C780BD00A6033B /* RubricasVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RubricasVC.h; sourceTree = "<group>"; };
@@ -87,6 +93,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				97A4B27D18ED039F003DA3DA /* libsqlite3.dylib in Frameworks */,
 				1C61B4F318BE6FF8003F3A39 /* CoreGraphics.framework in Frameworks */,
 				1C61B4F518BE6FF8003F3A39 /* UIKit.framework in Frameworks */,
 				1C61B4F118BE6FF8003F3A39 /* Foundation.framework in Frameworks */,
@@ -128,6 +135,8 @@
 		1C61B4EF18BE6FF8003F3A39 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				97A4B27C18ED039F003DA3DA /* libsqlite3.dylib */,
+				97A4B27A18ED0341003DA3DA /* libsqlite3.0.dylib */,
 				1C61B4F018BE6FF8003F3A39 /* Foundation.framework */,
 				1C61B4F218BE6FF8003F3A39 /* CoreGraphics.framework */,
 				1C61B4F418BE6FF8003F3A39 /* UIKit.framework */,
@@ -156,6 +165,8 @@
 				AF65989218C7AD4B00A6033B /* tareasVC.m */,
 				1C61B50518BE6FF8003F3A39 /* ViewController.h */,
 				AF65984118C780BD00A6033B /* RubricasVC.h */,
+				97A4B27E18ED03B1003DA3DA /* PrincipalVC.h */,
+				97A4B27F18ED03B1003DA3DA /* PrincipalVC.m */,
 				AF65984218C780BD00A6033B /* RubricasVC.m */,
 				1C61B50618BE6FF8003F3A39 /* ViewController.m */,
 				1C61B50818BE6FF8003F3A39 /* Images.xcassets */,
@@ -313,6 +324,7 @@
 				1C61B4FD18BE6FF8003F3A39 /* main.m in Sources */,
 				AF65984318C780BD00A6033B /* RubricasVC.m in Sources */,
 				1CE5388F18C64A2300B8488B /* HomeViewController.m in Sources */,
+				97A4B28018ED03B1003DA3DA /* PrincipalVC.m in Sources */,
 				D4A9830A18C7ABB400D445C1 /* EvaluarVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
