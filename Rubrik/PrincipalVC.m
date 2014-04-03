@@ -18,7 +18,7 @@
     [self insertarAlumno:1167511 :@"Luis Carlos" :@"kuak_17@hotmail.com"];
     [self insertarTarea:1 :@"blogspot" :1167511];
     [self insertarMateria:@"introduccion a las artes obscuras"];
-    [self insertarMateriayAlumno:1167511 :1];
+    [self insertarMateriayAlumno:1167511 :@"introduccion a las artes obscuras"];
     NSMutableArray *prueba = [self getAlumnos:@"introduccion a las artes obscuras"];
     
     NSLog(@"%@",prueba);
@@ -175,24 +175,38 @@
 //_______________________________________________
 /*
  PARAMETROS matricula: matricula del alumno (fk)
- id: id de la materia
+ nombre: nombre de la materia
  
  
  DESCRIPCIÓN
  inserta relación entre materia y alunmo
  */
 
--(void) insertarMateriayAlumno :(NSInteger) matricula :(NSInteger) idMateria{
-    NSString  *insertarSQL = [NSString stringWithFormat:@"INSERT into MateriaAlumno(ID,matricula,materia) VALUES (null,%d,%d)",matricula, idMateria ];
+-(void) insertarMateriayAlumno :(NSInteger) matricula :(NSString*) nombreMateria{
     
-    char *error;
-    int resultado = sqlite3_exec(baseDeDatos, [insertarSQL UTF8String], NULL, NULL, &error);
     
-    if ( resultado == SQLITE_OK) {
-        NSLog(@"Registro insertado...");
-    }
-    else {
-        NSLog(@"Error al insertar registro: %s", error);
+    NSString *getId = [NSString stringWithFormat:@"SELECT ID from materia where nombre like '%@'",nombreMateria];
+    
+    sqlite3_stmt *declaracion;
+    
+    char *indiceStr = " ";
+    if (sqlite3_prepare_v2(baseDeDatos, [getId UTF8String],-1, &declaracion, nil) == SQLITE_OK){
+        while (sqlite3_step(declaracion)==SQLITE_ROW) {
+            indiceStr = (char*)sqlite3_column_text(declaracion,0);
+            NSString *idMateria = [[NSString alloc] initWithUTF8String:indiceStr];
+            
+            NSString  *insertarSQL = [NSString stringWithFormat:@"INSERT into MateriaAlumno(ID,matricula,materia) VALUES (null,%d,%@)",matricula, idMateria ];
+            
+            char *error;
+            int resultado = sqlite3_exec(baseDeDatos, [insertarSQL UTF8String], NULL, NULL, &error);
+            
+            if ( resultado == SQLITE_OK) {
+                NSLog(@"Registro insertado...");
+            }
+            else {
+                NSLog(@"Error al insertar registro: %s", error);
+            }
+        }
     }
 }
 
@@ -283,7 +297,6 @@
             }
             
         }
-        
         
     }
     else{
